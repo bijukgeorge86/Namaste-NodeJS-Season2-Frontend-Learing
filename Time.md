@@ -1,2 +1,2 @@
-Episode 17
-Remainning Time 01:43:07
+Episode 18
+Remainning Time 01:09:00

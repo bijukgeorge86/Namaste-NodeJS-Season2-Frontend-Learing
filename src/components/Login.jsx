@@ -13,9 +13,6 @@ const Login = () => {
     const navigate = useNavigate();
 
     const handleLoginSubmit = async () => {
-        //e.preventDefault();
-        //console.log("Email ID => " + emailId);
-        //iconsole.log("Password => " + password);
         try {
             const res = await axios.post(
                 BASE_URL + "/login",
@@ -25,7 +22,6 @@ const Login = () => {
                 },
                 { withCredentials: true }
             );
-            //console.log(res.data);
             dispatch(addUser(res?.data));
             return navigate("/");
         } catch (error) {
